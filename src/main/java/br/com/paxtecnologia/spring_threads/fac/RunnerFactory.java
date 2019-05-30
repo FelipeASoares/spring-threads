@@ -21,7 +21,7 @@ public class RunnerFactory {
 	public Runnable getByStressMethod(String stressMethod) {
 		switch (stressMethod) {
 		case "fatorial":
-			return new FactorialRunner(factorialNumber);
+			return new FactorialRunner(loopCount, factorialNumber);
 		default:
 			return new LoopRunner(loopCount, maxCount);
 		}

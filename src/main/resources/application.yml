@@ -7,7 +7,7 @@ loop:
    maxCount: 999999999999999
 
 factorial:
-   number: 10
+   number: 2000
 
 logging:
   level:
