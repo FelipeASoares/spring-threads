@@ -1,0 +1,12 @@
+app:
+   numThreads: 5
+   
+loop:
+   count: 9999999999
+   maxCount: 1000000
+   
+logging:
+  level:
+    br:
+      com:
+        paxtecnologia: DEBUG
