@@ -40,10 +40,10 @@ public class App implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		ExecutorService taskExecutor = Executors.newFixedThreadPool(numThreads);
 		
-		Collection<Callable<Object>> list = new ArrayList<Callable<Object>>();
+		Collection<Callable<Object>> tasks = new ArrayList<Callable<Object>>();
 		
-		IntStream.range(0, numThreads).forEach(i -> list.add(Executors.callable(new LoopRunner(loopCount, maxCount))));		
-		List<Future<Object>> futures = taskExecutor.invokeAll(list);
+		IntStream.range(0, numThreads).forEach(i -> tasks.add(Executors.callable(new LoopRunner(loopCount, maxCount))));		
+		List<Future<Object>> futures = taskExecutor.invokeAll(tasks);
 
 		futures.forEach(f -> {
 			try {
