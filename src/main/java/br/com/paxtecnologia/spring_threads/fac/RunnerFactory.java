@@ -8,13 +8,13 @@ import br.com.paxtecnologia.spring_threads.runner.LoopRunner;
 
 @Component
 public class RunnerFactory {
-	
+
 	@Value("${loop.count}")
 	private Long loopCount;
 
 	@Value("${loop.maxCount}")
 	private Long maxCount;
-	
+
 	@Value("${factorial.number}")
 	private Long factorialNumber;
 

@@ -3,8 +3,8 @@ app:
    stress-method: fatorial
    
 loop:
-   count: 999999999999999
-   maxCount: 999999999999999
+   count: 999999
+   maxCount: 999999
 
 factorial:
    number: 2000

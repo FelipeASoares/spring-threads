@@ -9,7 +9,7 @@ public class LoopRunner implements Runnable {
 
 	private Long loopCount;
 	private Long maxCount;
-	
+
 	public LoopRunner(Long loopCount, Long maxCount) {
 		this.loopCount = loopCount;
 		this.maxCount = maxCount;

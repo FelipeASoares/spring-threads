@@ -21,7 +21,7 @@ public class FactorialRunner implements Runnable {
 	public void run() {
 		for (long i = 0; i < loopCount; i++) {
 			Long factorial = this.factorialNum;
-			
+
 			log.debug("Iniciando o fatorial de {}", factorial);
 			BigInteger result = BigInteger.valueOf(1);
 
